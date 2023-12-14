@@ -8,232 +8,71 @@ TanJunKiat/TanJunKiat is a ✨ special ✨ repository because its `README.md` (t
 You can click the Preview link to take a look at your changes.
 --->
 
-## RMF Dependencies path
-```mermaid
-digraph graphname {
-  "rmf_demos_gz_classic";
-  "rmf_demos_gz";
-  "rmf_demos";
-  "rmf_demos_fleet_adapter";
-  "rmf_fleet_adapter_python";
-  "rmf_fleet_adapter";
-  "rmf_visualization";
-  "rmf_task_sequence";
-  "rmf_visualization_schedule";
-  "rmf_visualization_rviz2_plugins";
-  "rmf_visualization_navgraphs";
-  "rmf_task_ros2";
-  "rmf_task";
-  "rmf_traffic_ros2";
-  "rmf_traffic_examples";
-  "rmf_robot_sim_gz_plugins";
-  "rmf_robot_sim_gz_classic_plugins";
-  "rmf_battery";
-  "rmf_websocket";
-  "rmf_visualization_obstacles";
-  "rmf_visualization_floorplans";
-  "rmf_visualization_fleet_states";
-  "rmf_traffic_editor_test_maps";
-  "rmf_traffic_editor";
-  "rmf_traffic";
-  "rmf_sensor_manager";
-  "rmf_robot_sim_common";
-  "rmf_demos_tasks";
-  "rmf_demos_panel";
-  "rmf_demos_maps";
-  "rmf_demos_bridges";
-  "rmf_building_sim_gz_plugins";
-  "rmf_building_sim_gz_classic_plugins";
-  "rmf_visualization_walls";
-  "rmf_visualization_sensors";
-  "rmf_visualization_sensor_range";
-  "rmf_visualization_building_systems";
-  "rmf_utils";
-  "rmf_task_msgs";
-  "rmf_ingestor_msgs";
-  "rmf_building_sim_common";
-  "rmf_building_map_tools";
-  "rmf_workcell_msgs";
-  "rmf_visualization_msgs";
-  "rmf_traffic_msgs";
-  "rmf_traffic_editor_assets";
-  "rmf_site_map_msgs";
-  "rmf_scheduler_msgs";
-  "rmf_obstacle_msgs";
-  "rmf_lift_msgs";
-  "rmf_gz_ros2_bridge";
-  "rmf_fleet_msgs";
-  "rmf_door_msgs";
-  "rmf_dispenser_msgs";
-  "rmf_demos_dashboard_resources";
-  "rmf_demos_assets";
-  "rmf_charger_msgs";
-  "rmf_building_map_msgs";
-  "rmf_api_msgs";
-  "pybind11_json_vendor";
-  "nlohmann_json_schema_validator_vendor";
-  "menge_vendor";
-  "ament_cmake_catch2";
-  "rmf_demos_gz_classic" -> "rmf_demos" [color="#ff0000"];
-  "rmf_demos_gz_classic" -> "rmf_building_sim_gz_classic_plugins" [color="#ff0000"];
-  "rmf_demos_gz_classic" -> "rmf_robot_sim_gz_classic_plugins" [color="#ff0000"];
-  "rmf_demos_gz" -> "rmf_demos" [color="#ff0000"];
-  "rmf_demos_gz" -> "rmf_robot_sim_gz_plugins" [color="#ff0000"];
-  "rmf_demos_gz" -> "rmf_building_sim_gz_plugins" [color="#ff0000"];
-  "rmf_demos" -> "rmf_traffic_ros2" [color="#ff0000"];
-  "rmf_demos" -> "rmf_demos_assets" [color="#ff0000"];
-  "rmf_demos" -> "rmf_demos_tasks" [color="#ff0000"];
-  "rmf_demos" -> "rmf_demos_fleet_adapter" [color="#ff0000"];
-  "rmf_demos" -> "rmf_demos_panel" [color="#ff0000"];
-  "rmf_demos" -> "rmf_task_ros2" [color="#ff0000"];
-  "rmf_demos" -> "rmf_fleet_adapter" [color="#ff0000"];
-  "rmf_demos" -> "rmf_demos_maps" [color="#ff0000"];
-  "rmf_demos" -> "rmf_building_map_tools" [color="#ff0000"];
-  "rmf_demos" -> "rmf_visualization" [color="#ff0000"];
-  "rmf_demos_fleet_adapter" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_fleet_adapter" -> "rmf_task_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_fleet_adapter" -> "rmf_fleet_adapter_python" [color="#ff0000"];
-  "rmf_fleet_adapter_python" -> "pybind11_json_vendor" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter_python" -> "rmf_fleet_adapter" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_websocket" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_door_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_task_sequence" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_dispenser_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_task_ros2" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_api_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_battery" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_task" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_ingestor_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_traffic_ros2" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_task_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "nlohmann_json_schema_validator_vendor" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "rmf_obstacle_msgs" [color="#0000ff:#ff0000"];
-  "rmf_fleet_adapter" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_visualization" -> "rmf_visualization_floorplans" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_schedule" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_building_systems" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_rviz2_plugins" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_walls" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_sensor_range" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_navgraphs" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_sensors" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_fleet_states" [color="#ff0000"];
-  "rmf_visualization" -> "rmf_visualization_obstacles" [color="#ff0000"];
-  "rmf_task_sequence" -> "rmf_task" [color="#0000ff:#ff0000"];
-  "rmf_task_sequence" -> "nlohmann_json_schema_validator_vendor" [color="#0000ff:#ff0000"];
-  "rmf_task_sequence" -> "rmf_api_msgs" [color="#0000ff:#ff0000"];
-  "rmf_task_sequence" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_visualization_schedule" -> "rmf_traffic_ros2" [color="#0000ff:#ff0000"];
-  "rmf_visualization_schedule" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_visualization_schedule" -> "rmf_traffic_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_schedule" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_schedule" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_visualization_rviz2_plugins" -> "rmf_traffic_ros2" [color="#0000ff:#ff0000"];
-  "rmf_visualization_rviz2_plugins" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_rviz2_plugins" -> "rmf_door_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_rviz2_plugins" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_rviz2_plugins" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_visualization_navgraphs" -> "rmf_traffic_ros2" [color="#0000ff:#ff0000"];
-  "rmf_visualization_navgraphs" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_visualization_navgraphs" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_navgraphs" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_navgraphs" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_navgraphs" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_task_ros2" -> "rmf_traffic_ros2" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "rmf_task_msgs" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "rmf_websocket" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "nlohmann_json_schema_validator_vendor" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "rmf_api_msgs" [color="#0000ff:#ff0000"];
-  "rmf_task_ros2" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_task" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_task" -> "rmf_battery" [color="#0000ff:#ff0000"];
-  "rmf_task" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_traffic_ros2" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "rmf_traffic_msgs" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "rmf_site_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_traffic_ros2" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_traffic_examples" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_plugins" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_plugins" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_plugins" -> "rmf_robot_sim_common" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_classic_plugins" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_classic_plugins" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_gz_classic_plugins" -> "rmf_robot_sim_common" [color="#0000ff:#ff0000"];
-  "rmf_battery" -> "rmf_traffic" [color="#0000ff:#ff0000"];
-  "rmf_battery" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_battery" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_websocket" -> "nlohmann_json_schema_validator_vendor" [color="#0000ff:#ff0000"];
-  "rmf_websocket" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_websocket" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_visualization_obstacles" -> "rmf_obstacle_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_obstacles" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_obstacles" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_visualization_floorplans" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_floorplans" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_floorplans" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_visualization_fleet_states" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_fleet_states" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_fleet_states" -> "rmf_utils" [color="#d2b48c"];
-  "rmf_traffic_editor_test_maps" -> "rmf_building_map_tools" [color="#0000ff"];
-  "rmf_traffic_editor" -> "rmf_utils" [color="#0000ff"];
-  "rmf_traffic" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_traffic" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_sensor_manager" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_sensor_manager" -> "rmf_obstacle_msgs" [color="#0000ff:#ff0000"];
-  "rmf_sensor_manager" -> "rmf_utils" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_common" -> "rmf_dispenser_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_common" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_common" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_robot_sim_common" -> "rmf_ingestor_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_tasks" -> "rmf_task_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_tasks" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_tasks" -> "rmf_dispenser_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_tasks" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_demos_panel" -> "rmf_task_msgs" [color="#ff0000"];
-  "rmf_demos_panel" -> "rmf_fleet_msgs" [color="#ff0000"];
-  "rmf_demos_panel" -> "rmf_demos_dashboard_resources" [color="#ff0000"];
-  "rmf_demos_maps" -> "rmf_building_map_tools" [color="#0000ff"];
-  "rmf_demos_bridges" -> "rmf_traffic_msgs" [color="#ff0000"];
-  "rmf_demos_bridges" -> "rmf_fleet_msgs" [color="#ff0000"];
-  "rmf_demos_bridges" -> "rmf_building_map_tools" [color="#ff0000"];
-  "rmf_demos_bridges" -> "rmf_site_map_msgs" [color="#ff0000"];
-  "rmf_building_sim_gz_plugins" -> "menge_vendor" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_gz_plugins" -> "rmf_building_sim_common" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_gz_plugins" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_gz_classic_plugins" -> "menge_vendor" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_gz_classic_plugins" -> "rmf_building_sim_common" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_gz_classic_plugins" -> "rmf_fleet_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_walls" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_walls" -> "rmf_door_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_walls" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_walls" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_sensors" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_sensors" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_sensor_range" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_sensor_range" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_building_systems" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_building_systems" -> "rmf_door_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_building_systems" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_visualization_building_systems" -> "rmf_visualization_msgs" [color="#0000ff:#ff0000"];
-  "rmf_utils" -> "ament_cmake_catch2" [color="#d2b48c"];
-  "rmf_task_msgs" -> "rmf_dispenser_msgs" [color="#0000ff:#ff0000"];
-  "rmf_ingestor_msgs" -> "rmf_dispenser_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_common" -> "rmf_lift_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_common" -> "menge_vendor" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_common" -> "rmf_door_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_sim_common" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_map_tools" -> "rmf_building_map_msgs" [color="#0000ff:#ff0000"];
-  "rmf_building_map_tools" -> "rmf_site_map_msgs" [color="#ff0000"];
-}
 
+```mermaid
+flowchart LR
+
+A("rmf_demos_gz_classic")
+B("rmf_demos_gz")
+C("rmf_demos")
+D("rmf_demos_fleet_adapter")
+E("rmf_fleet_adapter_python")
+F("rmf_fleet_adapter")
+G("rmf_visualization")
+H("rmf_task_sequence")
+I("rmf_visualization_schedule")
+J("rmf_visualization_rviz2_plugins")
+K("rmf_visualization_navgraphs")
+L("rmf_task_ros2")
+M("rmf_task")
+N("rmf_traffic_ros2")
+O("rmf_traffic_examples")
+P("rmf_robot_sim_gz_plugins")
+Q("rmf_robot_sim_gz_classic_plugins")
+R("rmf_battery")
+S("rmf_websocket")
+T("rmf_visualization_obstacles")
+U("rmf_visualization_floorplans")
+V("rmf_visualization_fleet_states")
+W("rmf_traffic_editor_test_maps")
+T("rmf_traffic_editor")
+Y("rmf_traffic")
+Z("rmf_sensor_manager")
+AA("rmf_robot_sim_common")
+AB("rmf_demos_tasks")
+AC("rmf_demos_panel")
+AD("rmf_demos_maps")
+AE("rmf_demos_bridges")
+AF("rmf_building_sim_gz_plugins")
+AG("rmf_building_sim_gz_classic_plugins")
+AH("rmf_visualization_walls")
+AI("rmf_visualization_sensors")
+AJ("rmf_visualization_sensor_range")
+AK("rmf_visualization_building_systems")
+AL("rmf_utils")
+AM("rmf_task_msgs")
+AN("rmf_ingestor_msgs")
+AO("rmf_building_sim_common")
+AP("rmf_building_map_tools")
+AQ("rmf_workcell_msgs")
+AR("rmf_visualization_msgs")
+AS("rmf_traffic_msgs")
+AT("rmf_traffic_editor_assets")
+AU("rmf_site_map_msgs")
+AV("rmf_scheduler_msgs")
+AW("rmf_obstacle_msgs")
+AX("rmf_lift_msgs")
+AY("rmf_gz_ros2_bridge")
+AZ("rmf_fleet_msgs")
+BA("rmf_door_msgs")
+BB("rmf_dispenser_msgs")
+BC("rmf_demos_dashboard_resources")
+BD("rmf_demos_assets")
+BE("rmf_charger_msgs")
+BF("rmf_building_map_msgs")
+BG("rmf_api_msgs")
+BH("pybind11_json_vendor")
+BI("nlohmann_json_schema_validator_vendor")
+BJ("menge_vendor")
+BK("ament_cmake_catch2")
 ```
