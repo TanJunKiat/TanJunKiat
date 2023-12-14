@@ -11,40 +11,20 @@ You can click the Preview link to take a look at your changes.
 ```mermaid
 flowchart LR
 
-E("rmf_fleet_adapter_python")
-F("rmf_fleet_adapter")
-G("rmf_visualization")
+
 H("rmf_task_sequence")
-I("rmf_visualization_schedule")
-J("rmf_visualization_rviz2_plugins")
-K("rmf_visualization_navgraphs")
-L("rmf_task_ros2")
 M("rmf_task")
-N("rmf_traffic_ros2")
 O("rmf_traffic_examples")
 P("rmf_robot_sim_gz_plugins")
 Q("rmf_robot_sim_gz_classic_plugins")
 R("rmf_battery")
-S("rmf_websocket")
-T("rmf_visualization_obstacles")
-U("rmf_visualization_floorplans")
-V("rmf_visualization_fleet_states")
-W("rmf_traffic_editor_test_maps")
-T("rmf_traffic_editor")
 Y("rmf_traffic")
-Z("rmf_sensor_manager")
 AA("rmf_robot_sim_common")
 AF("rmf_building_sim_gz_plugins")
 AG("rmf_building_sim_gz_classic_plugins")
-AH("rmf_visualization_walls")
-AI("rmf_visualization_sensors")
-AJ("rmf_visualization_sensor_range")
-AK("rmf_visualization_building_systems")
 AL("rmf_utils")
 AO("rmf_building_sim_common")
-AP("rmf_building_map_tools")
 AR("rmf_visualization_msgs")
-AT("rmf_traffic_editor_assets")
 AY("rmf_gz_ros2_bridge")
 BF("rmf_building_map_msgs")
 BG("rmf_api_msgs")
@@ -80,6 +60,37 @@ AD("rmf_demos_maps")
 AE("rmf_demos_bridges")
 BC("rmf_demos_dashboard_resources")
 D("rmf_demos_fleet_adapter")
+end
+
+subgraph "rmf_traffic_editor repository"
+AP("rmf_building_map_tools")
+AT("rmf_traffic_editor_assets")
+W("rmf_traffic_editor_test_maps")
+T("rmf_traffic_editor")
+end
+
+
+subgraph "rmf_visualisation repository"
+G("rmf_visualization")
+I("rmf_visualization_schedule")
+J("rmf_visualization_rviz2_plugins")
+K("rmf_visualization_navgraphs")
+T("rmf_visualization_obstacles")
+U("rmf_visualization_floorplans")
+V("rmf_visualization_fleet_states")
+AH("rmf_visualization_walls")
+AI("rmf_visualization_sensors")
+AJ("rmf_visualization_sensor_range")
+AK("rmf_visualization_building_systems")
+end
+
+subgraph "rmf_ros2 repository"
+E("rmf_fleet_adapter_python")
+F("rmf_fleet_adapter")
+Z("rmf_sensor_manager")
+N("rmf_traffic_ros2")
+L("rmf_task_ros2")
+S("rmf_websocket")
 end
 
 A --> C
@@ -244,5 +255,7 @@ AP --> BF
 AP --> AU
 
 ```
+
+
 
 
