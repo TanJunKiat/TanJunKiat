@@ -11,10 +11,6 @@ You can click the Preview link to take a look at your changes.
 ```mermaid
 flowchart LR
 
-A("rmf_demos_gz_classic")
-B("rmf_demos_gz")
-C("rmf_demos")
-D("rmf_demos_fleet_adapter")
 E("rmf_fleet_adapter_python")
 F("rmf_fleet_adapter")
 G("rmf_visualization")
@@ -38,10 +34,6 @@ T("rmf_traffic_editor")
 Y("rmf_traffic")
 Z("rmf_sensor_manager")
 AA("rmf_robot_sim_common")
-AB("rmf_demos_tasks")
-AC("rmf_demos_panel")
-AD("rmf_demos_maps")
-AE("rmf_demos_bridges")
 AF("rmf_building_sim_gz_plugins")
 AG("rmf_building_sim_gz_classic_plugins")
 AH("rmf_visualization_walls")
@@ -54,8 +46,6 @@ AP("rmf_building_map_tools")
 AR("rmf_visualization_msgs")
 AT("rmf_traffic_editor_assets")
 AY("rmf_gz_ros2_bridge")
-BC("rmf_demos_dashboard_resources")
-BD("rmf_demos_assets")
 BF("rmf_building_map_msgs")
 BG("rmf_api_msgs")
 BH("pybind11_json_vendor")
@@ -63,7 +53,7 @@ BI("nlohmann_json_schema_validator_vendor")
 BJ("menge_vendor")
 BK("ament_cmake_catch2")
 
-subgraph "rmf_internal_msgs"
+subgraph "rmf_internal_msgs repository"
 BE("rmf_charger_msgs")
 BB("rmf_dispenser_msgs")
 AZ("rmf_fleet_msgs")
@@ -76,6 +66,20 @@ AU("rmf_site_map_msgs")
 AM("rmf_task_msgs")
 AQ("rmf_workcell_msgs")
 AS("rmf_traffic_msgs")
+end
+
+
+subgraph "rmf_demos repository"
+A("rmf_demos_gz_classic")
+B("rmf_demos_gz")
+C("rmf_demos")
+BD("rmf_demos_assets")
+AB("rmf_demos_tasks")
+AC("rmf_demos_panel")
+AD("rmf_demos_maps")
+AE("rmf_demos_bridges")
+BC("rmf_demos_dashboard_resources")
+D("rmf_demos_fleet_adapter")
 end
 
 A --> C
