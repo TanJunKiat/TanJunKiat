@@ -7,6 +7,7 @@
 TanJunKiat/TanJunKiat is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+
 ```mermaid
 flowchart LR
 
@@ -48,21 +49,11 @@ AI("rmf_visualization_sensors")
 AJ("rmf_visualization_sensor_range")
 AK("rmf_visualization_building_systems")
 AL("rmf_utils")
-AM("rmf_task_msgs")
-AN("rmf_ingestor_msgs")
 AO("rmf_building_sim_common")
 AP("rmf_building_map_tools")
-AQ("rmf_workcell_msgs")
 AR("rmf_visualization_msgs")
-AS("rmf_traffic_msgs")
 AT("rmf_traffic_editor_assets")
-AU("rmf_site_map_msgs")
-AV("rmf_scheduler_msgs")
-AW("rmf_obstacle_msgs")
-AX("rmf_lift_msgs")
 AY("rmf_gz_ros2_bridge")
-AZ("rmf_fleet_msgs")
-BA("rmf_door_msgs")
 BC("rmf_demos_dashboard_resources")
 BD("rmf_demos_assets")
 BF("rmf_building_map_msgs")
@@ -75,6 +66,16 @@ BK("ament_cmake_catch2")
 subgraph "rmf_internal_msgs"
 BE("rmf_charger_msgs")
 BB("rmf_dispenser_msgs")
+AZ("rmf_fleet_msgs")
+BA("rmf_door_msgs")
+AX("rmf_lift_msgs")
+AN("rmf_ingestor_msgs")
+AV("rmf_scheduler_msgs")
+AW("rmf_obstacle_msgs")
+AU("rmf_site_map_msgs")
+AM("rmf_task_msgs")
+AQ("rmf_workcell_msgs")
+AS("rmf_traffic_msgs")
 end
 
 A --> C
@@ -239,6 +240,5 @@ AP --> BF
 AP --> AU
 
 ```
-
 
 
