@@ -63,10 +63,8 @@ AX("rmf_lift_msgs")
 AY("rmf_gz_ros2_bridge")
 AZ("rmf_fleet_msgs")
 BA("rmf_door_msgs")
-BB("rmf_dispenser_msgs")
 BC("rmf_demos_dashboard_resources")
 BD("rmf_demos_assets")
-BE("rmf_charger_msgs")
 BF("rmf_building_map_msgs")
 BG("rmf_api_msgs")
 BH("pybind11_json_vendor")
@@ -74,6 +72,10 @@ BI("nlohmann_json_schema_validator_vendor")
 BJ("menge_vendor")
 BK("ament_cmake_catch2")
 
+subgraph "rmf_internal_msgs"
+BE("rmf_charger_msgs")
+BB("rmf_dispenser_msgs")
+end
 
 A --> C
 A --> AG
@@ -237,3 +239,6 @@ AP --> BF
 AP --> AU
 
 ```
+
+
+
